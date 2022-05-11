@@ -5,11 +5,11 @@
     <title>MyStatus</title>
 </head>
 <div class="top">
-    <h2 onclick="window.location.href = `{% url 'main' %}`">ICKS LOL Tournament</h2>
+    <a href="https://yoonyoon9000.github.io/tournament/"><h2>ICKS LOL Tournament</h2></a>
     <div class="left">
-        <h4 onclick="window.location.href = `{% url 'apply' %}`">Apply</h4>
-        <h4 onclick="window.location.href = `{% url 'gameresult' %}`">Game Result</h4>
-        <h4 onclick="window.location.href = `{% url 'mystatus' %}`">My Status</h4>
+        <a href="https://yoonyoon9000.github.io/tournament/apply.html"><h4>Apply</h4></a>
+        <a href="https://yoonyoon9000.github.io/tournament/gameresult.html"><h4>Game Result</h4></a>
+        <a href="https://yoonyoon9000.github.io/tournament/mystatus.html"><h4>My Status</h4></a>
     </div>
 </div>
 
@@ -63,34 +63,46 @@ body,html {
          position:relative;
     }
 
+    .top a{
+        color:white;
+        text-decoration:none;
+        cursor: default;
+    }
+
     .top h2{
         padding: 1vw 2vw;
         color:white;
         width:50%;
+        font-size: 2.5vw;
+    }
+
+    .top h4, .top{
+        cursor: default;
     }
 
     .left{
         position:absolute;
         right:0;
-        top: 1vw;
+        top: 1.3vw;
         margin-right:5vw;
         display:flex;
         justify-content: space-around;
-        width:30%;
+        width:35%;
+
+    }
+
+    .top h4{
+        color:#000;
+        font-size:1.5vw;
+    }
+
+    h3{
+        font-size:1.2vw;
     }
 
     .mid{
         margin-left: 3vw;
-    }
-
-    th, td{
-        border:solid black 1px;
-        padding:0.5vw 2vw;
-        text-align:center;
-    }
-
-    .top h4, .top{
-        cursor: default;
+        font-size:1vw;
     }
 </style>
 </html>
