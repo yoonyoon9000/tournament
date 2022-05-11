@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyStatus</title>
+</head>
+<div class="top">
+    <h2 onclick="window.location.href = `{% url 'main' %}`">ICKS LOL Tournament</h2>
+    <div class="left">
+        <h4 onclick="window.location.href = `{% url 'apply' %}`">Apply</h4>
+        <h4 onclick="window.location.href = `{% url 'gameresult' %}`">Game Result</h4>
+        <h4 onclick="window.location.href = `{% url 'mystatus' %}`">My Status</h4>
+    </div>
+</div>
+
+<div class="mid">
+    <h3>My Status</h3> <br><br>
+
+    <p>Please put your participant ID</p>
+    <input type="text"/>
+    <button>Search</button>
+    <p>Total Number of Win: </p>
+    <p>Total Number of Lose: </p>
+    <table style="border:solid black 1px;">
+        <tr>
+            <th>#</th>
+            <th>Opponent</th>
+            <th>Win/Lose</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+<style>
+body,html {
+  margin:0;
+  padding:0;
+}
+
+    div{
+        margin:0;
+        padding:0;
+    }
+
+    .top{
+         background:linear-gradient(to right,#373B44,#4286f4);
+         overflow:auto;
+         position:relative;
+    }
+
+    .top h2{
+        padding: 1vw 2vw;
+        color:white;
+        width:50%;
+    }
+
+    .left{
+        position:absolute;
+        right:0;
+        top: 1vw;
+        margin-right:5vw;
+        display:flex;
+        justify-content: space-around;
+        width:30%;
+    }
+
+    .mid{
+        margin-left: 3vw;
+    }
+
+    th, td{
+        border:solid black 1px;
+        padding:0.5vw 2vw;
+        text-align:center;
+    }
+
+    .top h4, .top{
+        cursor: default;
+    }
+</style>
+</html>

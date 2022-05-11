@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Apply</title>
+</head>
+<body>
+<div class="top">
+    <h2 onclick="window.location.href = `{% url 'main' %}`">ICKS LOL Tournament</h2>
+    <div class="left">
+        <h4 onclick="window.location.href = `{% url 'apply' %}`">Apply</h4>
+        <h4 onclick="window.location.href = `{% url 'gameresult' %}`">Game Result</h4>
+        <h4 onclick="window.location.href = `{% url 'mystatus' %}`">My Status</h4>
+    </div>
+</div>
+
+<div class="mid">
+    <h3>Apply for the Tournament</h3> <br><br>
+
+    <p>Qualification<br>1. Korean citizen studying at college/university in UK currently (Bachelor's Degree 또는 Master's Degree)
+        <br>2. Must have a LoL account that can participate in a ranking game
+        <br> **You can participate the tournament regardless of your current rank</p>
+
+    <p>Please Complete the Google Form Below to Sign-Up for the Tournament</p>
+    <p style="color:red;">Please complete the form with the gmail account you usually use
+        <br>We will email your participant number to the email that you submit the google form.</p>
+    <a href="#">Google Form</a>
+
+</div>
+</body>
+<style>
+body,html {
+  margin:0;
+  padding:0;
+}
+
+    div{
+        margin:0;
+        padding:0;
+    }
+
+    .top{
+         background:linear-gradient(to right,#373B44,#4286f4);
+         overflow:auto;
+         position:relative;
+    }
+
+    .top h2{
+        padding: 1vw 2vw;
+        color:white;
+        width:50%;
+    }
+
+    .left{
+        position:absolute;
+        right:0;
+        top: 1vw;
+        margin-right:5vw;
+        display:flex;
+        justify-content: space-around;
+        width:30%;
+    }
+
+    .mid{
+        margin-left: 3vw;
+    }
+
+    .top h4, .top{
+        cursor: default;
+    }
+</style>
+</html>
