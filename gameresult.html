@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameResult</title>
+</head>
+<body>
+<div class="top">
+    <h2 onclick="window.location.href = `{% url 'main' %}`">ICKS LOL Tournament</h2>
+    <div class="left">
+        <h4 onclick="window.location.href = `{% url 'apply' %}`">Apply</h4>
+        <h4 onclick="window.location.href = `{% url 'gameresult' %}`">Game Result</h4>
+        <h4 onclick="window.location.href = `{% url 'mystatus' %}`">My Status</h4>
+    </div>
+</div>
+
+<div class="mid">
+    <h3>Result</h3> <br><br>
+
+    <table style="border:solid black 1px;">
+        <tr>
+            <th> Placement</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1st Place</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2nd Place</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3rd Place</td>
+            <td></td>
+        </tr>
+    </table>
+
+</div>
+</body>
+<style>
+body,html {
+  margin:0;
+  padding:0;
+}
+
+    div{
+        margin:0;
+        padding:0;
+    }
+
+    .top{
+         background:linear-gradient(to right,#373B44,#4286f4);
+         overflow:auto;
+         position:relative;
+    }
+
+    .top h2{
+        padding: 1vw 2vw;
+        color:white;
+        width:50%;
+    }
+
+    .left{
+        position:absolute;
+        right:0;
+        top: 1vw;
+        margin-right:5vw;
+        display:flex;
+        justify-content: space-around;
+        width:30%;
+    }
+
+    .mid{
+        margin-left: 3vw;
+    }
+
+    th, td{
+        border:solid black 1px;
+        padding:0.5vw 2vw;
+        text-align:center;
+    }
+
+    .top h4, .top{
+        cursor: default;
+    }
+</style>
+</html>

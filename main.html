@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<div class="top">
+    <a href="tournaments/main.html"><h2>ICKS LOL Tournament</h2></a>
+    <div class="left">
+        <a href="tournaments/apply.html"><h4 onclick="window.location.href = `{% url 'apply' %}`">Apply</h4></a>
+        <a href="tournaments/gameresult.html"><h4 onclick="window.location.href = `{% url 'gameresult' %}`">Game Result</h4></a>
+        <a href="Sumuli/AboutMe/index.html"><h4 onclick="window.location.href = `{% url 'mystatus' %}`">My Status</h4></a>
+    </div>
+</div>
+
+<div class="mid">
+    <h3>Welcome to Imperial College Korean Society League of Legends Tournament</h3> <br><br>
+
+    <p>Dear members of Imperial College Korean Society, <br><br>
+        I hope every members of ICKS are doing well.<br>
+        As for the next event, we decided to open League of Legends tournament since many of the members requested for this event.<br>
+        We are expecting many to be involved in the event: not only the members who enjoy the League of Legends but also others who like to watch the tournaments.<br>
+        Please have lots of interest in our tournament :)<br><br>
+        - Sungjun Yoon(ICKS Coordinator)
+    </p>
+
+</div>
+</body>
+<style>
+body,html {
+  margin:0;
+  padding:0;
+}
+
+    div{
+        margin:0;
+        padding:0;
+    }
+
+    .top{
+         background:linear-gradient(to right,#373B44,#4286f4);
+         overflow:auto;
+         position:relative;
+    }
+
+    .top a{
+        color:white;
+        text-decoration:none;
+        cursor: default;
+    }
+
+    .top h2{
+        padding: 1vw 2vw;
+        color:white;
+        width:50%;
+    }
+
+    .top h4, .top{
+        cursor: default;
+    }
+    .left{
+        position:absolute;
+        right:0;
+        top: 1vw;
+        margin-right:5vw;
+        display:flex;
+        justify-content: space-around;
+        width:30%;
+    }
+
+    .mid{
+        margin-left: 3vw;
+    }
+</style>
+</html>
